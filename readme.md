@@ -29,9 +29,9 @@
 ## **🛠️ Installation**
 
 
-**# Clone the repository**cd news-classification-app**
+**# Clone the repository
 ```
-https://github.com/Nayann23/NEWS-CATEGORY-CLASSIFICATION-USING-ENSEMBLE-LEARNING.git
+git clone https://github.com/Nayann23/NEWS-CATEGORY-CLASSIFICATION-USING-ENSEMBLE-LEARNING.git
 ```
 ---
 ```

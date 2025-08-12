@@ -101,4 +101,3 @@ This project is licensed under the MIT License — see the LICENSE file for deta
 * Scikit-learn for machine learning algorithms and utilities.
 ```
 
-Do you want me to also **make this README into a perfectly formatted `README.md` file** so you can directly use it in your project folder without editing? That way it’s copy-paste ready.

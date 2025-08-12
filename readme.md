@@ -29,7 +29,7 @@ This project implements a machine learning pipeline for classifying news article
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/news-classification-app.git
+   git clone https://github.com/Nayann23/NEWS-CATEGORY-CLASSIFICATION-USING-ENSEMBLE-LEARNING.git
    cd news-classification-app
 ````
 

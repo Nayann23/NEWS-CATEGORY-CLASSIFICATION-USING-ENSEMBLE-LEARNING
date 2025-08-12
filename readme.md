@@ -110,4 +110,3 @@ This project is licensed under the MIT License — see the LICENSE file for deta
 - Scikit-learn for ML algorithms and utilities.
 ```
 
-Do you want me to also make a downloadable `README.md` file with all these lines bolded so you can paste it directly into your repo? That way you don’t have to copy-paste manually.

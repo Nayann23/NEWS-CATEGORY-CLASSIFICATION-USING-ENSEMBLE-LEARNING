@@ -108,5 +108,4 @@ This project is licensed under the MIT License — see the LICENSE file for deta
 - AG News Dataset from Kaggle.  
 - Streamlit for interactive UI.  
 - Scikit-learn for ML algorithms and utilities.
-```
 

@@ -29,18 +29,18 @@ A user-friendly Streamlit-based web app allows interactive predictions based on 
 ## 🛠️ Installation
 
 
-# Clone the repository
+## Clone the repository
 ```
 git clone https://github.com/Nayann23/NEWS-CATEGORY-CLASSIFICATION-USING-ENSEMBLE-LEARNING.git
 ```
 ---
-# (Optional) Create and activate a virtual environment
+## (Optional) Create and activate a virtual environment
 ```
 python -m venv venv  
 source venv/bin/activate    # On Windows: venv\Scripts\activate
 ```
 ---
-# Install dependencies
+## Install dependencies
 ```
 pip install -r requirements.txt
 ```

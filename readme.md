@@ -26,9 +26,9 @@ This project implements a machine learning pipeline for classifying news article
 
 ## 🛠️ Installation
 
-```bash
+```
 # Clone the repository
-git clone [https://github.com/Nayann23/NEWS-CATEGORY-CLASSIFICATION-USING-ENSEMBLE-LEARNING.git](https://github.com/Nayann23/NEWS-CATEGORY-CLASSIFICATION-USING-ENSEMBLE-LEARNING.git)
+
 cd news-classification-app
 
 # (Optional) Create and activate a virtual environment
@@ -45,7 +45,7 @@ Ensure `stacking_model.pkl` and `tfidf.pkl` are in the project directory (these 
 
 Run the Streamlit app:
 
-```bash
+```
 streamlit run app.py
 ```
 
@@ -99,3 +99,6 @@ This project is licensed under the MIT License — see the LICENSE file for deta
 * Streamlit for interactive UI.
 
 * Scikit-learn for machine learning algorithms and utilities.
+```
+
+Do you want me to also **make this README into a perfectly formatted `README.md` file** so you can directly use it in your project folder without editing? That way it’s copy-paste ready.

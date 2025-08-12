@@ -1,4 +1,3 @@
-markdown
 # News Classification App
 
 ## Overview

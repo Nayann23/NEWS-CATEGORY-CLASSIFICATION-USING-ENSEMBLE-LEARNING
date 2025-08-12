@@ -1,104 +1,84 @@
-# 📰 News Classification App
+📰 News Classification App
+🔍 Overview
+This project implements a machine learning pipeline for classifying news articles into four categories: World, Sports, Business, and Sci/Tech. The solution leverages text data preprocessing, TF-IDF vectorization, and ensemble learning techniques to achieve high accuracy. A user-friendly Streamlit-based web app allows interactive predictions based on user input.
 
-## 🔍 Overview
+✨ Features
+🧹 Preprocessing and vectorization of raw news text using TF-IDF.
 
-This project implements a machine learning pipeline for classifying news articles into four categories: **World, Sports, Business, and Sci/Tech**. The solution leverages text data preprocessing, TF-IDF vectorization, and ensemble learning techniques to achieve high accuracy. A user-friendly Streamlit-based web app allows interactive predictions based on user input.
+🤖 Ensemble learning with stacking of Logistic Regression, Multinomial Naive Bayes, and LinearSVC models.
 
----
+⚙️ Hyperparameter tuning using GridSearchCV to optimize model performance.
 
-## ✨ Features
+🖥️ Streamlit frontend for easy, real-time prediction with category mapping and prediction confidence.
 
-- 🧹 Preprocessing and vectorization of raw news text using TF-IDF.  
-- 🤖 Ensemble learning with stacking of Logistic Regression, Multinomial Naive Bayes, and LinearSVC models.  
-- ⚙️ Hyperparameter tuning using GridSearchCV to optimize model performance.  
-- 🖥️ Streamlit frontend for easy, real-time prediction with category mapping and prediction confidence.  
-- 🚀 Lightweight and efficient, suitable for deployment.
+🚀 Lightweight and efficient, suitable for deployment.
 
----
+📚 Dataset
+Dataset used: AG News Dataset (from Kaggle), which contains news articles categorized into World, Sports, Business, and Sci/Tech.
 
-## 📚 Dataset
+Training data size: 120,000 samples (30,000 per category).
 
-- Dataset used: AG News Dataset (from Kaggle), which contains news articles categorized into World, Sports, Business, and Sci/Tech.  
-- Training data size: 120,000 samples (30,000 per category).  
-- Testing data size: 7,600 samples.
+Testing data size: 7,600 samples.
 
----
+🛠️ Installation
+# Clone the repository
+git clone https://github.com/Nayann23/NEWS-CATEGORY-CLASSIFICATION-USING-ENSEMBLE-LEARNING.git
+cd news-classification-app
 
-## 🛠️ Installation
+# (Optional) Create and activate a virtual environment
+python -m venv venv
+source venv/bin/activate    # On Windows: venv\Scripts\activate
 
-1. Clone the repository:
+# Install dependencies
+pip install -r requirements.txt
 
-   git clone https://github.com/Nayann23/NEWS-CATEGORY-CLASSIFICATION-USING-ENSEMBLE-LEARNING.git  
-   cd news-classification-app
+🚀 Usage
+Ensure stacking_model.pkl and tfidf.pkl are in the project directory (these files contain the trained model and vectorizer).
 
-2. (Optional) Create and activate a virtual environment:
+Run the Streamlit app:
 
-   python -m venv venv  
-   source venv/bin/activate    # On Windows: venv\Scripts\activate
+streamlit run app.py
 
-3. Install dependencies:
+Open the displayed local URL in your browser.
 
-   pip install -r requirements.txt
+Input news text and click Predict to see the predicted news category.
 
----
+🗂️ Project Structure
+news-classification-app/
+│
+├── app.py
+├── NewsClassifierPro.ipynb
+├── stacking_model.pkl
+├── tfidf.pkl
+├── train.csv
+├── requirements.txt
+├── LICENSE
+└── README.md
 
-## 🚀 Usage
+📊 Model Details
+Vectorization: TF-IDF with text preprocessing.
 
-1. Ensure `stacking_model.pkl` and `tfidf.pkl` are in the project directory (these files contain the trained model and vectorizer).
+Base Models: Logistic Regression, Multinomial Naive Bayes, LinearSVC.
 
-2. Run the Streamlit app:
+Ensemble Method: StackingClassifier with Logistic Regression as the meta-classifier.
 
-   streamlit run app.py
+Hyperparameter Tuning: GridSearchCV applied on base models.
 
-3. Open the displayed local URL in your browser.
+Evaluation: Achieved approximately 92% accuracy on the test set.
 
-4. Input news text and click **Predict** to see the predicted news category.
+🔮 Future Work
+🌐 Extend to multi-lingual news classification.
 
----
+🤖 Incorporate deep learning models like BERT for improved semantic understanding.
 
-## 🗂️ Project Structure
+🔗 Build a REST API for easier integration with other applications.
 
-news-classification-app/  
-│  
-├── app.py  
-├── NewsClassifierPro.ipynb  
-├── stacking_model.pkl  
-├── tfidf.pkl  
-├── train.csv  
-├── requirements.txt  
-├── LICENSE  
-└── README.md  
+📄 License
+This project is licensed under the MIT License — see the LICENSE file for details.
 
----
+🙏 Acknowledgments
+AG News dataset from Kaggle.
 
-## 📊 Model Details
+Streamlit for interactive UI.
 
-- **Vectorization:** TF-IDF with text preprocessing.  
-- **Base Models:** Logistic Regression, Multinomial Naive Bayes, LinearSVC.  
-- **Ensemble Method:** StackingClassifier with Logistic Regression as the meta-classifier.  
-- **Hyperparameter Tuning:** GridSearchCV applied on base models.  
-- **Evaluation:** Achieved approximately 92% accuracy on the test set.
-
----
-
-## 🔮 Future Work
-
-- 🌐 Extend to multi-lingual news classification.  
-- 🤖 Incorporate deep learning models like BERT for improved semantic understanding.  
-- 🔗 Build a REST API for easier integration with other applications.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🙏 Acknowledgments
-
-- AG News dataset from Kaggle.  
-- [Streamlit](https://streamlit.io/) for interactive UI.  
-- Scikit-learn for machine learning algorithms and utilities.
-
----
+Scikit-learn for machine learning algorithms and utilities.
